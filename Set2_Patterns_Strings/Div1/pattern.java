@@ -92,3 +92,10 @@ public class pattern {
       var1.close();
    }
 }
+
+
+
+
+
+
+ 
