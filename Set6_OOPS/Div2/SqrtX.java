@@ -10,17 +10,13 @@ public class SqrtX {
         while (start <= end) {
             long mid = start + (end - start) / 2;
             
-            // If mid*mid exactly matches x
             if (mid * mid == x) {
                 return (int) mid;
             }
-            
-            // If mid*mid is smaller, our answer might be mid, but let's check higher numbers
             if (mid * mid < x) {
-                answer = mid; // Store potential answer
+                answer = mid; 
                 start = mid + 1;
             } else {
-                // If mid*mid is too large, look at smaller numbers
                 end = mid - 1;
             }
         }
